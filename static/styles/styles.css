@@ -296,13 +296,13 @@ body{
     width: 100%;
   }
   .img-presentation{
-    width:100%;
+    width:50%;
     display: flex;
     justify-content: center;
   }
   #profile-img{
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: auto;
     float:none;
   }
   .text-presentation{
