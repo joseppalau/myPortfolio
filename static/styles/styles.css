@@ -300,9 +300,7 @@ body{
     justify-content: center;
   }
   #profile-img{
-    width: 50%;
-    height: auto;
-    float:none;
+    display: none;
   }
   .text-presentation{
     text-align: center;
