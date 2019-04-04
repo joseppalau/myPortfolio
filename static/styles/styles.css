@@ -281,6 +281,10 @@ body{
 @media(max-device-width: 500px){
 
   /*landing*/
+  .welcome-section{
+    height: auto;
+  }
+
   .div-brandname{
     font-size: 20px;
   }
