@@ -278,7 +278,7 @@ body{
 }
 
 
-@media(max-device-width: 500px){
+@media screen and (max-width: 500px){
 
   /*landing*/
   .welcome-section{
@@ -286,7 +286,8 @@ body{
   }
 
   .div-brandname{
-    font-size: 20px;
+    font-size: 50px;
+    height: 100px;
   }
   .div-presentation{
     display: flex;
@@ -300,13 +301,21 @@ body{
     justify-content: center;
   }
   #profile-img{
-    display: none;
+    width: 250px;
+    height: 250px;
+    float:none;
   }
   .text-presentation{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top:5px;
+    line-height: 25px;
   }
   .text-presentation h1{
     text-align: center;
+    height: 30px;
   }
   #icons-div{
     display: flex;
