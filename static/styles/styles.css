@@ -282,7 +282,7 @@ body{
 
   /*landing*/
   .div-brandname{
-    font-size: 50px;
+    font-size: 30px;
   }
   .div-presentation{
     display: flex;
@@ -296,7 +296,7 @@ body{
     justify-content: center;
   }
   #profile-img{
-    width: 300px;
+    width: 75%;
     height: 300px;
     float:none;
   }
