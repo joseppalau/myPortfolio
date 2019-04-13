@@ -28,24 +28,28 @@ body{
   color: white;
 }
 
-#nav-right{
+#email-header{
+  margin-right: 20px;
+}
+
+.topnav{
   padding-right: 20px;
   width: 50%;
-}
-
-#nav-right ul{
-  list-style-type: none;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
-#nav-right li{
-  margin-left: 20px;
-}
-
-#nav-right li a{
+.topnav a{
+  display: block;
   text-decoration: none;
   color: white;
+  margin-left: 15px;
+}
+
+
+.topnav .icon{
+  display: none;
 }
 
 .welcome-section{
@@ -64,17 +68,16 @@ body{
   align-items: center;
   justify-content: center;
   color: #00ccff;
-  width:100%;
   height: 25vh;
   font-size: 50px;
 }
 
 .div-presentacion{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width:100%;
+  margin: 0 auto;
+  width:80%;
   height: 25vh;
   color: #4d4d4d;
   font-size: 20px;
@@ -93,41 +96,12 @@ body{
   margin: 0 auto;
 }
 
-.text-presentation{
-  text-align: left;
-  width: 50%;
-  margin-left: 10px;
-  color: white;
-}
-
-.text-presentation h1{
-  text-align:left;
-}
-
-.text-presentation a{
-  color: white;
-}
-
 .service-section{
   margin: auto;
   height: 100vh;
   width: 90%;
   display: flex;
   justify-content: center;
-}
-
-.service-section h1{
-  text-align: center;
-}
-
-.service-content-div{
-  display: flex;
-  justify-content: flex-start;
-}
-
-.service-content-div h3{
-  text-align: center;
-  width: 90%;
 }
 
 .service-div{
@@ -137,7 +111,7 @@ body{
   justify-content: flex-start;
   width: 33.33%;
   padding-left:15px;
-  padding-right: 15px;
+  padding-right:15px;
 }
 
 .service-div h3{
@@ -161,220 +135,86 @@ body{
   border-radius: 10px;
 }
 
-.projects-div{
-  display: flex;
-  justify-content: center;
-}
-
-.project-reference{
-  text-align: center;
-  margin: 5px;
-  padding:5px;
-  width: 200px;
-  height: 350px;
-  border: 1px solid black;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between;
-}
-
-.project-reference a{
+#footer a{
   text-decoration: none;
+}
+
+#footer a p{
   color: #00ccff;
-}
-
-.project-reference img{
-  width: 80%;
-  margin: 0 auto;
-}
-
-.projects-web-git-icons{
-  display: flex;
-  justify-content: center;
-}
-
-#logos-technologies{
-  display: flex;
-  justify-content: center;
-}
-
-#code-education{
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-}
-
-.code-education-div{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-}
-
-.code-education-reference{
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-.code-education-reference h3{
-  color: white;
-  background: grey;
-  padding: 5px;
-  margin-bottom: 5px;
-}
-
-.code-education-reference p{
-  padding: 5px;
-}
-
-#hackerrank-img{
-  width: 50%;
-  height: auto;
-  margin: 0 auto;
-}
-
-#web-responsive-img{
-  width: 50%;
-  display: block;
-  margin: 0 auto;
-}
-
-#clever-programmer-img{
-  width: 20%;
-  display: block;
-  margin: 0 auto;
-}
-
-#experience{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#experience h2{
+  font-size: 20px;
   text-align: center;
 }
-
-.experience-div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.experience-reference{
-  margin-bottom: 20px;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-.experience-reference h3{
-  color: white;
-  background: grey;
-  padding: 5px;
-}
-
-.experience-reference p{
-  padding: 5px;
-}
-
-#contact{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#contact h2{
-  text-align: center;
-}
-
-.contact-detail{
-  border: 1px solid black;
-  text-align: center;
-  width: 300px;
-  padding: 5px;
-  border-radius: 10px;
-  background: grey;
-  color: white;
-}
-
 
 @media screen and (max-width: 500px){
 
-  /*landing*/
-#navbar{
-  justify-content: space-around;
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
 }
 
-  .welcome-section{
+/*@media screen and (max-width: 500px){
+
+  .topnavresponsive {position: fixed;}
+  .topnavresponsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 20;
+  }
+  .topnavresponsive a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+
+}*/
+
+@media screen and (max-width: 500px){
+
+  #mobile-header{
+    display: none;
+  }
+
+  #email-header{
+    font-size: 12px;
+  }
+  /*landing*/
+  .div-brandname{
+    font-size: 35px;
+    padding-bottom: 8vh;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  #image-landing{
+    width: 80%;
     height: auto;
   }
 
-  .div-brandname{
-    padding-top: 20px;
-    font-size: 25px;
-    height: 100px;
-  }
-  .div-presentation{
-    display: flex;
+  .div-presentacion{
+    padding-top: 8vh;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .img-presentation{
-    display: flex;
-    justify-content: center;
-  }
-  #profile-img{
-    width: 100px;
-    height: 100px;
-    float:none;
-  }
-  .text-presentation{
+    justify-content: flex-start;
+    margin:0 auto;
+    font-size: 14px;
     text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    line-height: 25px;
-    padding-bottom: 20px;
-  }
-  .text-presentation h1{
-    text-align: center;
-    height: 30px;
-  }
-  #icons-div{
-    display: flex;
-    justify-content: center;
   }
 
   /*skills*/
-  .skill-content-div{
+  .service-section{
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    height: auto;
   }
 
-  .skill-div{
-    width: 90%;
+  .service-div{
+    width: 100%;
     padding: 0px;
   }
 
-  /*projects*/
-  .projects-div{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-reference{
-    width:90%;
-    padding:0px;
+  .service-div p{
+    height: auto;
+    font-size: 14px;
   }
 
 }
