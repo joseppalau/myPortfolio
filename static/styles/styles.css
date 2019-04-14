@@ -15,12 +15,12 @@ body{
   background: #00ccff;
 }
 
-#nav-left{
+#header-left{
   padding-left: 20px;
   width: 50%;
 }
 
-#nav-left ul{
+#header-left ul{
   padding-left: 0px;
   list-style-type: none;
   display: flex;
@@ -32,9 +32,13 @@ body{
   margin-right: 20px;
 }
 
-.topnav{
+#header-right{
   padding-right: 20px;
   width: 50%;
+}
+
+.topnav{
+  padding-right: 0px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -45,6 +49,10 @@ body{
   text-decoration: none;
   color: white;
   margin-left: 15px;
+}
+
+.topnav a:hover{
+  color: #000066;
 }
 
 
@@ -153,21 +161,38 @@ body{
     display: block;
 }
 
-/*@media screen and (max-width: 500px){
+@media screen and (max-width: 500px){
 
-  .topnavresponsive {position: fixed;}
+  .topnavresponsive {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 25vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    background-color: #00ccff;
+  }
   .topnavresponsive a.icon {
     position: absolute;
-    right: 0;
-    top: 20;
+    right: 20px;
+    top: 2vh;
   }
   .topnavresponsive a {
-    float: none;
     display: block;
-    text-align: right;
+    text-decoration: none;
+    color: white;
   }
 
-}*/
+  .topnavresponsive a:hover{
+    color: #000066;
+  }
+
+}
 
 @media screen and (max-width: 500px){
 
