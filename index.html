@@ -11,7 +11,7 @@
   <body>
 
 <div id=header>
-  <div id="header-left" class="">
+  <div id="header-left" class="header-left">
     <ul>
       <li id="email-header">hola@horyzoncode.com</li>
       <li id="mobile-header">+34 658 795 647</li>
@@ -20,8 +20,8 @@
 
   <div id = "header-right" class="">
     <nav id="nav-right" class="topnav">
-      <a href="#welcome-section">Home</a>
-      <a href="#service-section">Services</a>
+      <a id="homeId"href="#welcome-section" onclick="myFunction()">Inicio</a>
+      <a id="serviciosId" href="#service-section" onclick="myFunction()">Servicios</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
     </nav>
   </div>
@@ -35,7 +35,7 @@
       <img src="static/images/landing-apaisada.jpg" id="image-landing" alt="">
     </div>
     <div class="div-presentacion">
-      <p>Una agencia especializada en desarrollo web. Unimos técnología e inteligencia de negocio.<br>
+      <p>Una agencia especializada en <strong style="color:#00ccff;">desarrollo web</strong>. Unimos diseño, tecnología y análisis de datos.<br>
       Digitaliza tu empresa y hazla crecer.</p>
     </div>
 </section>
@@ -44,14 +44,14 @@
     <div id="service-corporate-sites" class="service-div">
       <h3>Webs Corporativas</h3>
       <p>
-      Una página web atractiva, limpia y que ofrezca contenido relevante es la mejor carta de presentación. Si quieres mejorar tu relevancia en la red, aumentar el tráfico de visitantes y hacer crecer tus ventas, ponte en contacto con nosotros.
+      Una página web atractiva, emocionante y que ofrezca contenido relevante es la mejor carta de presentación. Si quieres mejorar tu relevancia en la red, aumentar el tráfico de visitantes y hacer crecer tu negocio, ponte en contacto con nosotros.
       </p>
       <img src="static/images/web-moderna.jpg" alt="">
     </div>
     <div id="service-backend-div" class="service-div">
       <h3>Aplicaciones Web</h3>
       <p>
-      Ofrece nuevas experiencias a tus clientes mediante el lanzamiento de aplicaciones web y móviles. Permance más cerca de ellos y aumenta tus ventas.
+      Ofrece nuevas experiencias a tus clientes mediante el lanzamiento de aplicaciones web y móviles. Permance más cerca de ellos y aumenta tus ventas. No te quedes atrás. Ahora es el momento.
       </p>
       <img src="static/images/aplicaciones-hashtag.jpg" alt="">
     </div>
